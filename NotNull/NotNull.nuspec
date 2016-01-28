@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>NotNull</id>
+    <version>$version$</version>
+    <title>NotNull</title>
+    <authors>Ben Magyar</authors>
+    <owners>Ben Magyar</owners>
+    <licenseUrl>https://raw.githubusercontent.com/BenMagyar/NotNull/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/BenMagyar/NotNull</projectUrl>
+    <iconUrl>http://noIcon</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      PNotNull is a small library to make working with null values easier. 
+    </description>
+    <releaseNotes>Initial Release.</releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <tags>Null NotNull IfNotNull</tags>
+  </metadata>
+</package>
