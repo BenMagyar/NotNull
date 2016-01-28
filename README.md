@@ -5,11 +5,11 @@
 
 A small library to help with nullable objects in C#.
 
-# Object Extension Methods
+## Object Extension Methods
 
 List of methods with summaries and examples.
 
-## `TOut IfNotNull<TIn, TOut>(this TIn item, Func<TIn, TOut> function)`
+### IfNotNull(this item, function)
 
 Returns `null` when `null`, otherwise it returns the output of the applied function.
 
@@ -22,7 +22,7 @@ testObject.IfNotNull(s => s + "llo");
 >> "Hello"
 ```
 
-## `TOut IfNotNullElseDefault<TIn, TOut>(this TIn item, Func<TIn, TOut> function)`
+### IfNotNullElseDefault(this item, function)
 
 Returns `default` value of `TOut` when `null`, otherwise it
 returns the output of the applied function.
@@ -36,7 +36,7 @@ testObject.IfNotNullElseDefault(s => s + "llo");
 >> "Hello"
 ```
 
-## `void IfNotNull<TIn>(this TIn item, Action<TIn> action)`
+### IfNotNull<TIn>(this item, action)
 
 Runs the action when not null.
 
@@ -46,7 +46,7 @@ string testObject = null;
 testObject.IfNotNull(s => Console.WriteLine("Hello"));
 ```
 
-## `TOut IfNotNullOrDefault<TIn, TOut>(this TIn item, Func<TIn, TOut> function)`
+### IfNotNullOrDefault(this item, function)
 
 Returns default value of `TOut` when null or
 default, otherwise it returns the output of the applied function.
@@ -60,7 +60,7 @@ testObject.IfNotNullOrDefault(i => i + 5);
 >> 6
 ```
 
-## `void IfNotNullOrDefault<TIn>(this TIn item, Action<TIn> action)`
+### IfNotNullOrDefault(this item, action)
 
 Runs the action when not null or default
 
@@ -69,5 +69,3 @@ string testObject = "Hello";
 // Will run
 testObject.IfNotNullOrDefault(s => Console.WriteLine(s));
 ```
-
-# Thanks
