@@ -7,7 +7,7 @@ A small library to help with nullable objects in C#.
 
 ## Object Extension Methods
 
-List of methods with summaries and examples.
+Extension methods with summaries and examples.
 
 ### IfNotNull(this item, function)
 
